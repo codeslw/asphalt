@@ -1,0 +1,65 @@
+.Header {
+    position: sticky;
+    padding: 10px;
+    margin: 0;
+    width: 90%;
+    align-self:center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: inherit;
+    
+}
+.logo{
+    margin-left: 20px;
+}
+.NavItems {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 11pt;
+}
+.NavItems a{
+    color: #666;
+    
+    position: relative;
+    
+
+}
+.NavItems a, 
+.NavItems a::after,
+.NavItems a::before{
+    transition: all .5s;
+}
+
+.NavItems a:visited{
+    color: #666;
+}
+
+.NavItems a:hover {
+    color: #222;
+  z-index: 1;
+}
+.NavItems a::after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #777;
+    height: 1px;
+}
+.NavItems  a:hover:after{
+    width: 100%;
+} 
+.contactNumber {
+    font-weight: 550;
+    font-size: 11pt;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.3;
+}
